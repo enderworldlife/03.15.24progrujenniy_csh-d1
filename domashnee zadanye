@@ -1,0 +1,42 @@
+using System;
+
+
+namespace kyky
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int sum = 0;
+            if (args.Length == 3)
+            {
+                int first = Convert.ToInt32(args[0]);
+                string condition = args[1];
+                int second = Convert.ToInt32(args[2]);
+                if (condition == "+") 
+                { 
+                    sum = first + second;
+                }
+                if (condition == "-")
+                {
+                    sum = first - second;
+                }
+                if (condition == "/")
+                {
+                    sum = first / second;
+                }
+                if (condition == "+")
+                {
+                    sum = first + second;
+                }
+
+                Console.WriteLine(sum);
+
+            }
+        }
+    }
+}
+
+
+
+
